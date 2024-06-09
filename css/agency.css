@@ -1,0 +1,23 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.bg {
+  background-image: url("../img/header-bg.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 10%;
+  animation: zoomin 10s 1;
+}
+
+@keyframes zoomin {
+  30% {
+    transform: scale(1);
+  }
+  0% {
+    transform: scale(2);
+  }
+}
