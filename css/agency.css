@@ -1,71 +1,60 @@
+html {
+  margin: 0;
+  height: 100%;
+}
 @font-face {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf) format('truetype')
-    }
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aX8.ttf)
+    format("truetype");
+}
 
-    @font-face {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf) format('truetype')
-    }
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCuM73w5aX8.ttf)
+    format("truetype");
+}
 
-    body {
-      overflow-x: hidden;
-      font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      -webkit-tap-highlight-color: #3772FF
-    }
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: #3772ff;
+}
 
-    header {
-      background-image: linear-gradient(135deg, rgba(0, 0, 0, .8) 0, rgba(18, 76, 154, .23) 50%), url(../img/header-bg.jpg);
-      background-repeat: no-repeat;
-      background-attachment: scroll;
-      background-position: center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
-      text-align: center;
-      color: #fff
-    }
+body,
+.bg {
+  background-image: url(../img/header-bg.webp);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 10%;
+  animation: zoomin 10s 1;
+}
 
-    header .intro-text {
-      padding-top: 285px;
-      padding-bottom: 50px
-    }
+@keyframes zoomin {
+  30% {
+    transform: scale(1);
+  }
 
-    header .intro-text .intro-heading {
-      font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 100px;
-      line-height: 100px;
-      margin-bottom: 25px
-    }
+  0% {
+    transform: scale(2);
+  }
+}
 
-    body,
-    html {
-      margin: 0;
-      height: 100%
-    }
+header .intro-text {
+  padding-top: 17.813rem;
+  padding-bottom: 50px;
+}
 
-    .bg {
-      background-image: url(../img/header-bg.webp);
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: 10%;
-      animation: zoomin 10s 1
-    }
-
-    @keyframes zoomin {
-      30% {
-        transform: scale(1)
-      }
-
-      0% {
-        transform: scale(2)
-      }
-    }
+header .intro-text .intro-heading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  margin-bottom: 25px;
+}
