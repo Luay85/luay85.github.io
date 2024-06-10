@@ -24,6 +24,21 @@ body {
   -webkit-tap-highlight-color: #3772ff;
 }
 
+header .intro-text {
+  padding-top: 17.813rem;
+  padding-bottom: 50px;
+}
+
+header .intro-text .intro-heading {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  margin-bottom: 25px;
+}
+
 body,
 .bg {
   background-image: url(../img/header-bg.webp);
@@ -42,19 +57,4 @@ body,
   0% {
     transform: scale(2);
   }
-}
-
-header .intro-text {
-  padding-top: 17.813rem;
-  padding-bottom: 50px;
-}
-
-header .intro-text .intro-heading {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 6.25rem;
-  line-height: 6.25rem;
-  margin-bottom: 25px;
 }
