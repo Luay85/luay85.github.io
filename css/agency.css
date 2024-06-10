@@ -64,11 +64,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: 10%;
-  animation: zoomin 10s 1;
+  animation: zoomin 3s 1;
 }
 
 @keyframes zoomin {
-  30% {
+  100% {
     transform: scale(1);
   }
 
